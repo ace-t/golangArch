@@ -120,7 +120,7 @@ func httpPostRequestJson(){
 
 	// Client객체에서 Request 실행
 	//client := &http.Client{}
-	client := http.Client{}  // addressable하면 자동으로 &를 붙여준다. 
+	client := http.Client{}  // addressable하면 자동으로 &를 붙여준다.
 	resp, err := client.Do(req)
 	if err != nil {
 		panic(err)
