@@ -39,15 +39,20 @@ func panicFunc(){
 }
 
 func openFile(txtName string){
+
+	// defere 함수. panic 호출시 실행됨
+	defer func() {
+		// Go 내장함수인 recover()함수는 panic 함수에 의한 패닉상태를 다시 정상상태로 되돌리는 함수
+		if r := recover(); r != nil {
+			fmt.Println("OPEN ERROR", r)
+		}
+	}()
+
 	f, err := os.Open(txtName)
 	if err != nil {
 		panic(err)
 	}
 	defer f.Close()
-}
-
-func recoverFunc(){
-
 }
 
 /*
@@ -56,6 +61,5 @@ func recoverFunc(){
  */
 func main() {
 	deferFunc()
-	//panicFunc()
-	//recoverFunc()
+	panicFunc()
 }
