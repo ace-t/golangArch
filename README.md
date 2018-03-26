@@ -13,3 +13,4 @@
   * step10 : about goroutine
   * step11 : about channel
   * step12 : about panic&recover
+  * step13 : about priavte IP
