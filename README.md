@@ -1,6 +1,7 @@
 # golangArch
 * basic grammar를 통해 golang 철학 배우기
 * http://acet.pe.kr/category/Language/go%20lang 등 가이드 문서 작성
+* 아래의 순서는 무지막지 하다. 내 마음대로니깐 ㅎㅎ
   * step01 : about Struct 기본
   * step02 : about receiver
   * step03 : about Interface
@@ -14,3 +15,4 @@
   * step11 : about channel
   * step12 : about panic&recover
   * step13 : about priavte IP
+  * step14 : about basic
